@@ -1,0 +1,82 @@
+*{font-family: sans-serif;}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: auto;
+    right: auto;
+}
+nav{
+    background-color: #f5aa1f;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 40px;
+    align-items: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+a:hover{
+    color: #4093FF;
+    transform: scale(1.1);
+}
+#Accueil{
+    background-image: url("../images/assets.euromoneydigital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+    top: 0px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+ul{
+    list-style: none;
+    margin-block-start: 0em;
+    padding-inline-start: 0px;
+}
+li{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.radio{
+    width: 20vw;
+    padding: 0px;
+}
+.radio input{
+    transform: translateY(15px);
+}
+#inscription{
+    width: 20vw;
+    margin: 20px auto;
+}
+#bouton{
+    display: flex;
+    justify-content: space-around;
+}
+#galerie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#galerie img{
+    width: 30vw;
+    height: 32vh;
+    margin: 10px auto;
+    transition: 0.2s;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#galerie img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px 0 black;
+}
