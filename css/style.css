@@ -1,8 +1,10 @@
-*{font-family: sans-serif;}
+*{font-family: Verdana, Tahoma, sans-serif;}
 html {
     scroll-behavior: smooth;
 }
-
+body{
+    overflow-x: hidden;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -72,6 +74,9 @@ label{
     background-color: #F0A824;
     padding: 40px;
 }
+#inscription h1{
+    text-align: center;
+}
 #bouton{
     display: flex;
     justify-content: space-around;
@@ -79,8 +84,12 @@ label{
 #galerie{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #084CA3;
+    background-color: #F0A824;
     padding: 30px;
+}
+#galerie h1{
+    text-align: center;
+    padding-top: 50px;
 }
 #galerie img{
     width: 30vw;
@@ -94,22 +103,49 @@ label{
     transform: scale(1.1);
     box-shadow: 0 0 50px 0 black;
 }
+#articles img{
+    width: 30vw;
+    height: 32vh;
+}
 #video{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    background-color: #084CA3;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 #video iframe{
     width: 50vw;
     height: 40vh;
+    display: flex;
+    margin: 0px auto;
+}
+#articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #084CA3;
+
+}
+#articles article{
+    width: 40vw;
+    margin: 0px auto;
+}
+#articles p, figcaption{
+    font-weight: bold;
+}
+#articles img{
+    margin: 0px auto;
 }
 footer{
     background-color: black;
     display: flex;
     color: white;
     justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 dl{
-    padding: 10px;
+    text-align: left;
 }
